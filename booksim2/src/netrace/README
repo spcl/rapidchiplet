@@ -1,0 +1,123 @@
+*------------------------------------------------------------------------------
+* Netrace: A network packet trace reader
+* 
+* Joel Hestness
+* hestness@cs.utexas.edu
+* Computer Architecture and Technology Laboratory
+* Department of Computer Science
+* University of Texas - Austin
+*------------------------------------------------------------------------------
+
+Netrace is a network packet trace reader library for use with network
+simulators. It reads packets from tracefiles of a standardized, flexible
+file format. This README contains information about compilation and use
+of the netrace library.
+
+EXAMPLE CODE:
+-------------
+There is an example of how netrace can be used in the file `main.c'. It
+implements a simple cycle-driven network simulator with queuing of 
+packets. To build and run it, simply run make:
+ > make
+ > ./main testraces/shrtex.tra.bz2
+
+TRACE VIEWER:
+-------------
+This package also contains a utility to dump information about the network
+traces to the command line. It is called `trace_viewer' and can be found in
+the `util' directory:
+ > cd util
+ > make
+ > ./trace_viewer ../testraces/example.tra.bz2
+Here, the header of the tracefile is printed, including the benchmark name,
+the number of packets and cycles for the trace, notes about the trace,
+and phase information.
+
+API:
+----
+Netrace implements a very simple example programming interface. In general,
+the use of the reader proceeds as follows: (1) open tracefile, (2) seek to
+the phase of interest in the tracefile, (3) read packets from the tracefile,
+(4) when a packet is to be injected, check if all upward dependences
+have been cleared, (5) upon eject of packet, clear its downward
+dependences, and free packet, (6) close the tracefile.  Each of these
+steps is represented by a function call to the reader library as described
+here:
+
+* Interface Functions:
+  --------------------
+void nt_open_trfile()
+
+  To open a tracefile, call `nt_open_trfile'. The character string passed
+  should be the path to the tracefile. Note that the reader only handles
+  bzip2 traces in an effort to keep files small.
+
+void nt_seek_region( nt_regionhead_t* )
+
+  To seek to a particular portion of the trace specified by a region
+  header, call `nt_seek_region', passing the region header. Use the
+  trace_viewer to see the phase information for a tracefile.
+
+nt_packet_t* nt_read_packet( void )
+
+  To read a packet from the tracefile, call `nt_read_packet'. The read
+  function returns packets in chronological order by cycle. Packet cycle
+  is determined through simulation of a full-system, and the cycle
+  represents the earliest time that the packet could be injected into the
+  network.
+
+int nt_dependencies_cleared( nt_packet_t* )
+
+  Once a packet has been returned from `nt_read_packet', it is live and
+  can be injected into the network. However, if injection of this packet
+  is dependent on the receipt of another packet, it should be held in
+  wait while the packets on which it depends are in flight in the network.
+  To that end, we provide `nt_depends_cleared', a function to test if
+  the upward dependences of a packet have been cleared. The trace reader
+  tracks all packet dependences, and quickly returns 1 if the packet
+  passed has no more upward dependences, or 0 if it still depends on
+  packets that have not been ejected from the network.
+
+void nt_clear_dependencies_free_packet( nt_packet_t* )
+
+  This function should be called when a packet is ejected from the network.
+  `nt_clear_depends_free' clears all of the downward dependences of the
+  packet that is passed (i.e. if it is the last packet on which packet "A"
+  depends, then a further call to `nt_depends_cleared(A)' will return true,
+  indicating that A can be injected into the network). After clearing its
+  dependences, this function frees the packet that is passed.
+
+  If 'nt_init_cleared_packets_list' was called at the beginning of tracing,
+  the packets whose dependencies have been cleared will be added to the
+  cleared packets list.
+
+void nt_close_trfile( void )
+
+  As the name suggests, this function closes the currently open tracefile,
+  or returns immediately if one is not open. It also resets all dependency
+  tracking structures.
+
+void nt_disable_dependencies( void )
+
+  Disable dependency tracking. Use this function if you are just reading
+  and using packets, but do not care about the dependencies between them.
+
+void nt_init_cleared_packets_list()
+
+  Instead of testing each live packet each cycle to see if it can be
+  injected into the network, we provide a cleared packets list that can
+  be read each cycle. This list contains the set of packets whose
+  upward dependencies were cleared since the last time that
+  'nt_empty_cleared_packets_list' was called. For more details on using
+  the cleared packets list, see main.c.
+
+nt_packet_list_t* nt_get_cleared_packets_list()
+
+  Call this function to get the cleared packets list each cycle. Packets
+  in the list can be injected into the network because all of their
+  dependencies have been cleared.
+
+void nt_empty_cleared_packets_list()
+
+  Call this function after reading the cleared packets list to empty the
+  list for the next period of network activity.

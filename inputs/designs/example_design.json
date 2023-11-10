@@ -1,0 +1,9 @@
+{
+	"technology_nodes_file" : "inputs/technology_nodes/example_technologies.json",
+	"chiplets_file" : "inputs/chiplets/example_chiplets.json",
+	"chiplet_placement_file" : "inputs/chiplet_placements/example_placement.json",
+	"ici_topology_file" : "inputs/ici_topologies/example_topology.json",
+	"packaging_file" : "inputs/packaging/example_packaging_active.json",
+	"thermal_config" : "inputs/thermal_config/example_thermal_config.json",
+	"booksim_config" : "inputs/booksim_config/example_booksim_config.json"
+}

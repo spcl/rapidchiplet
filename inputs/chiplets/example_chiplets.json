@@ -1,0 +1,72 @@
+{
+	"compute_chiplet_1phy" : {
+		"dimensions" : {"x" : 5,"y" : 5},
+		"type" : "compute",
+		"phys" : [{"x" : 2.5, "y" : 2.5}],
+		"technology" : "tech_1",
+		"power" : 5,
+		"relay" : true,
+		"internal_latency" : 5,
+		"unit_count" : 1
+	},
+	"compute_chiplet_4phys" : {
+		"dimensions" : {"x" : 5,"y" : 5},
+		"type" : "compute",
+		"phys" : [{"x" : 2.5, "y" : 4.0},{"x" : 4.0, "y" : 2.5},{"x" : 2.5, "y" : 1.0},{"x" : 1.0, "y" : 2.5}],
+		"technology" : "tech_1",
+		"power" : 5,
+		"relay" : true,
+		"internal_latency" : 5,
+		"unit_count" : 1
+	},
+	"compute_chiplet_6phys" : {
+		"dimensions" : {"x" : 5,"y" : 5},
+		"type" : "compute",
+		"phys" : [{"x" : 1.5, "y" : 4.75},{"x" : 3.5, "y" : 4.75},{"x" : 4.75, "y" : 2.5},{"x" : 1.5, "y" : 0.25},{"x" : 3.5, "y" : 0.25},{"x" : 0.25, "y" : 2.5}],
+		"technology" : "tech_1",
+		"power" : 5,
+		"relay" : true,
+		"internal_latency" : 5,
+		"unit_count" : 1
+	},
+	"memory_chiplet_1phy" : {
+		"dimensions" : {"x" : 10,"y" : 5},
+		"type" : "memory",
+		"phys" : [{"x" : 9.75, "y" : 2.5}],
+		"technology" : "tech_2",
+		"power" : 7,
+		"relay" : false,
+		"internal_latency" : 5,
+		"unit_count" : 4
+	},
+	"memory_chiplet_square" : {
+		"dimensions" : {"x" : 5,"y" : 5},
+		"type" : "memory",
+		"phys" : [{"x" : 2.5, "y" : 4.0}],
+		"technology" : "tech_1",
+		"power" : 3,
+		"relay" : false,
+		"internal_latency" : 5,
+		"unit_count" : 1
+	},
+	"io_chiplet_1phy" : {
+		"dimensions" : {"x" : 10,"y" : 7},
+		"type" : "io",
+		"phys" : [{"x" : 5, "y" : 0.25}],
+		"technology" : "tech_2",
+		"power" : 10,
+		"relay" : false,
+		"internal_latency" : 5,
+		"unit_count" : 1
+	},
+	"io_chiplet_square" : {
+		"dimensions" : {"x" : 5,"y" : 5},
+		"type" : "io",
+		"phys" : [{"x" : 2.5, "y" : 4.0}],
+		"technology" : "tech_1",
+		"power" : 4,
+		"relay" : false,
+		"internal_latency" : 5,
+		"unit_count" : 1
+	}
+}
