@@ -104,7 +104,14 @@ Do you have any questions or did you find a bug? Contact us at patrick.iff@inf.e
 Did you use RapidChiplet in your work? Feel free to cite us using the following citation:
 
 ```bibtex
-TODO: Add citation
+@misc{iff2023rapidchiplet,
+      title={RapidChiplet: A Toolchain for Rapid Design Space Exploration of Chiplet Architectures}, 
+      author={Patrick Iff and Benigna Bruggmann and Maciej Besta and Luca Benini and Torsten Hoefler},
+      year={2023},
+      eprint={2311.06081},
+      archivePrefix={arXiv},i
+      primaryClass={cs.AR}
+}
 ```
 
 ## References
@@ -113,4 +120,4 @@ TODO: Add citation
 
 [2] https://github.com/booksim/booksim2
 
-[3] TODO: Insert paper citation
+[3] P. Iff, B. Bruggmann, M. Besta, L. Benini, and T. Hoefler, “Rapidchiplet: A toolchain for rapid design space exploration of chiplet architectures,” 2023.
