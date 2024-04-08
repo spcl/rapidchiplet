@@ -228,7 +228,7 @@ def construct_ici_routing(ici_graph, routing):
 					while cur != src:
 						# Balance paths across links
 						if routing == "balanced":
-							n_paths = [n_paths_per_edge[(pred,cur)] for pred in preds[cur]]
+							n_paths = [n_paths_per_edge_per_class[cls][(pred,cur)] for pred in preds[cur]]
 							pred = preds[cur][n_paths.index(min(n_paths))]
 						# Randomly select shortest paths
 						elif routing == "random":
