@@ -86,7 +86,7 @@ def compute_link_summary(chiplets, placement, topology, packaging):
 			link_lengths_internal[tuple(node_ids)] = length
 			link_lengths_internal[tuple(reversed(node_ids))] = length
 		elif packaging["link_routing"] == "euclidean":
-			length =  math.sqrt(sum([abs(positions[0][dim] - positions[1][dim]) for dim in range(2)]))
+			length =  math.sqrt(sum([abs(positions[0][dim] - positions[1][dim])**2 for dim in range(2)]))
 			link_lengths.append(length)
 			link_lengths_internal[tuple(node_ids)] = length
 			link_lengths_internal[tuple(reversed(node_ids))] = length
