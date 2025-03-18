@@ -32,8 +32,6 @@
 #include <map>
 #include <set>
 #include <cassert>
-#include <limits>
-#include <functional>
 
 #include "module.hpp"
 #include "config_utils.hpp"
@@ -45,8 +43,6 @@
 #include "routefunc.hpp"
 #include "outputset.hpp"
 #include "injection.hpp"
-
-#include "netrace.h"
 
 //register the requests to a node
 class PacketReplyInfo;
@@ -90,39 +86,20 @@ protected:
   vector<TrafficPattern *> _traffic_pattern;
   vector<InjectionProcess *> _injection_process;
 
-  // HERE: Start of additional variables added by RapidChiplet
-
-  // Information needed for the simulation of real traces
-  const char* _trace;
-  bool netrace;
-  bool _netrace_cycles;
-
-  // Packets with cleared dependencies that can be sent
-  // We have one packet queue per source-node
-  // Each packet queue is on ordered set
-  // The elements of the set are (cycle,packet)-pairs to order them by the cycle, in which
-  // they appear in the trace
-  vector<set<pair<unsigned int, nt_packet_t*>>> packets_to_send_by_src; 
-  // Packets that are in-flight
-  // We have one list (vector) per destination-node
-  vector<vector<nt_packet_t*>> packets_in_flight_by_dst; 
-
-  // Number of compute-cores, memories and IO-units.
-  // Needed to remap src- and dst-IDs from traces
-  int _n_comp_units;
-  int _n_mem_units;
-  int _n_io_units;
-
-  // The runtime of a trace in cycles.
-  int trace_runtime_in_cycles = 0;
-
-  // Variables for partial simulation of trace regions
-  bool _use_partial_simulation; 
-  long long int _partial_simulation_cycles;
-  unsigned int _partial_simulation_region;
-  long long int _offset_cycles = 0;
-
-  // HERE: End of additional variables added by RapidChiplet
+  //TODO: Start: Custom code
+  string rc_mode;
+  bool rc_ignore_cycles;
+  long rc_max_cycle;
+  long rc_num_packets;
+  long rc_trace_runtime;
+  map<int, priority_queue<pair<long,long>, vector<pair<long,long>>, greater<pair<long,long>>>> ready_packets;	
+  map<long, vector<long>> pkg_rev_deps;
+  map<long, int> pkg_source;
+  map<long, int> pkg_destination;
+  map<long, int> pkg_deps_left;
+  map<long, long> pkg_cycle;
+  map<long, int> pkg_flits;
+  //TODO: End: Custom code
 
   // ============ Message priorities ============ 
 
@@ -250,7 +227,7 @@ protected:
   int   _drain_time;
 
   int   _total_sims;
-  long long int _sample_period;
+  int   _sample_period;
   int   _max_samples;
   int   _warmup_periods;
 
@@ -303,14 +280,13 @@ protected:
   virtual void _RetireFlit( Flit *f, int dest );
 
   void _Inject();
-  int _Step(int packets_left );
+  int _Step( int trace_packets_left);
 
   bool _PacketsOutstanding( ) const;
   
   virtual int  _IssuePacket( int source, int cl );
   void _GeneratePacket( int source, int size, int cl, int time );
-  void _GeneratePacketNT( int source, int dest, int size, int cl, int time, nt_packet_t* packet );
-  
+
   virtual void _ClearStats( );
 
   void _ComputeStats( const vector<int> & stats, int *sum, int *min = NULL, int *max = NULL, int *min_pos = NULL, int *max_pos = NULL ) const;

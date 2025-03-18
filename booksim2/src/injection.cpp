@@ -32,6 +32,12 @@
 #include "random_utils.hpp"
 #include "injection.hpp"
 
+// TODO: Start: Additions by the RapidChiplet developers 
+#include <fstream>
+#include <nlohmann/json.hpp>
+using json = nlohmann::json;
+// TODO: End: Additions by the RapidChiplet developers 
+
 using namespace std;
 
 InjectionProcess::InjectionProcess(int nodes, double rate)
@@ -73,18 +79,9 @@ InjectionProcess * InjectionProcess::New(string const & inject, int nodes,
   }
   vector<string> params = tokenize_str(param_str);
 
-  // Get number of cores, memory units, and IO units
-  int n_comp_units = config->GetInt("n_comp_units");
-  int n_mem_units = config->GetInt("n_mem_units");
-  int n_io_units = config->GetInt("n_io_units");
-  string traffic = config->GetStr("traffic");
-
-
   InjectionProcess * result = NULL;
   if(process_name == "bernoulli") {
     result = new BernoulliInjectionProcess(nodes, load);
-  } else if(process_name == "custom") {
-    result = new CustomInjectionProcess(nodes, load, n_comp_units, n_mem_units, n_io_units, traffic);
   } else if(process_name == "on_off") {
     bool missing_params = false;
     double alpha = numeric_limits<double>::quiet_NaN();
@@ -134,6 +131,9 @@ InjectionProcess * InjectionProcess::New(string const & inject, int nodes,
       }
     }
     result = new OnOffInjectionProcess(nodes, load, alpha, beta, r1, initial);
+  } else if(process_name == "custom") {
+	vector<bool> does_inject(nodes);
+    result = new CustomInjectionProcess(nodes, load, does_inject, config);
   } else {
     cout << "Invalid injection process: " << inject << endl;
     exit(-1);
@@ -155,36 +155,53 @@ bool BernoulliInjectionProcess::test(int source)
   return (RandomFloat() < _rate);
 }
 
-//=============================================================
-// Custom
-//=============================================================
+// TODO: Start: Added by RapidChiplet developers
 
-CustomInjectionProcess::CustomInjectionProcess(int nodes, double rate, int n_comp_units, int n_mem_units, int n_io_units, string traffic)
-  : InjectionProcess(nodes, rate), _n_comp_units(n_comp_units), _n_mem_units(n_mem_units), _n_io_units(n_io_units), _traffic(traffic)
-{
+CustomInjectionProcess::CustomInjectionProcess(int nodes, double rate, vector<bool> does_inject, Configuration const * const config)
+  : InjectionProcess(nodes, rate), _does_inject(does_inject)
+{ 
+  // Read the traffic file
+  if (config->GetStr("mode") == "traffic"){
+    string file_name = config->GetStr("traffic_file");
+    std::ifstream file(file_name);
+    if (!file.is_open()) {
+    std::cerr << "Could not open traffic file which is expected to be at " << file_name << std::endl;
+    return;
+    }
+    // Parse the JSON file
+    json jsonData;
+    file >> jsonData;
+    // Store content in vector<vector<float>>
+    std::vector<std::vector<float>> data;
+    int src_node = 0;
+    for (const auto& nested_list: jsonData) {
+    std::vector<float> weights;
+    for (const auto& element : nested_list) {
+      weights.push_back(element.get<float>());
+    }
+    // If the sum of weights is 0, then we don't have any traffic to inject
+    if (std::accumulate(weights.begin(), weights.end(), 0.0) == 0) {
+      _does_inject[src_node] = false;
+    }else{
+      _does_inject[src_node] = true;
+    }
+    src_node++;
+    }
+  }
 }
 
 bool CustomInjectionProcess::test(int source)
 {
   assert((source >= 0) && (source < _nodes));
-  if((_traffic == "C2C") || (_traffic == "C2M") || (_traffic == "C2I")){
-    if(source >= _n_comp_units){
-      return false;
-    } 
-    return (RandomFloat() < _rate);
-  }
-  else if (_traffic == "M2I"){
-    if(source < _n_comp_units || source >= (_n_comp_units + _n_mem_units)){
-      return false;
-    } 
-    return (RandomFloat() < _rate);
+  if (!_does_inject[source]) {
+	return false;
   }
   else{
-    cout << "ERROR in custom injection process" << endl;
-	assert(false);
+    return (RandomFloat() < _rate);
   }
 }
 
+// TODO: Start: Added by RapidChiplet developers
 
 
 //=============================================================

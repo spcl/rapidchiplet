@@ -122,17 +122,17 @@ public:
   virtual int dest(int source);
 };
 
+// TODO: Start: Added by RapidChiplet developers
+
 class CustomTrafficPattern : public RandomTrafficPattern {
 private:
-  int _n_comp_units;
-  int _n_mem_units;
-  int _n_io_units;
-  string _traffic;
-
+  std::vector<vector<float>> _traffic;
 public:
-  CustomTrafficPattern(int nodes, int n_comp_units, int n_mem_units, int n_io_units, string traffic);
+  CustomTrafficPattern(int nodes, std::vector<vector<float>> traffic, Configuration const * const config);
   virtual int dest(int source);
 };
+
+// TODO: End: Added by RapidChiplet developers
 
 class UniformBackgroundTrafficPattern : public RandomTrafficPattern {
 private:

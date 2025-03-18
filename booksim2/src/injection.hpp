@@ -51,16 +51,17 @@ public:
   virtual bool test(int source);
 };
 
+// TODO: Start: Added by RapidChiplet developers
+
 class CustomInjectionProcess : public InjectionProcess {
-protected:
-  int _n_comp_units;
-  int _n_mem_units;
-  int _n_io_units;
-  string _traffic;
+private:
+  vector<bool> _does_inject;
 public:
-  CustomInjectionProcess(int nodes, double rate, int n_comp_units, int n_mem_units, int n_io_units, string traffic);
+  CustomInjectionProcess(int nodes, double rate, vector<bool> does_inject, Configuration const * const config);
   virtual bool test(int source);
 };
+
+// TODO: End: Added by RapidChiplet developers
 
 
 class OnOffInjectionProcess : public InjectionProcess {

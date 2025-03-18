@@ -45,13 +45,17 @@ class AnyNet : public Network {
   //stores minimal routing information from every router to every node
   //[router][dest_node]=port
   vector<map<int, int> > routing_table;
+  // TODO: Start of additional code by RapidChiplet developers
+  vector<map<int, int> > default_routing_table;
+  vector<map<int, map<int,int> > > extended_routing_table;
+  string routing_table_type;
+  // TODO: End of additional code by RapidChiplet developers
 
   void _ComputeSize( const Configuration &config );
   void _BuildNet( const Configuration &config );
   void readFile();
-  void buildRoutingTable(Configuration config);
-  void route(int r_start, int n_comp, int n_mem, int n_io, bool r_comp, bool r_mem, bool r_io);
-  void route_custom(int r_start, int n_comp, int n_mem, int n_io, bool r_comp, bool r_mem, bool r_io, map<pair<int,int>,int>);
+  void buildRoutingTable(const Configuration &config);
+  void route(int r_start);
 
 public:
   AnyNet( const Configuration &config, const string & name );
@@ -67,5 +71,4 @@ public:
 
 void min_anynet( const Router *r, const Flit *f, int in_channel, 
 		      OutputSet *outputs, bool inject );
-
 #endif

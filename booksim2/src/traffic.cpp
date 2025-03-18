@@ -31,6 +31,12 @@
 #include "random_utils.hpp"
 #include "traffic.hpp"
 
+// TODO: Start: Additions by the RapidChiplet developers 
+#include <fstream>
+#include <nlohmann/json.hpp>
+using json = nlohmann::json;
+// TODO: End: Additions by the RapidChiplet developers 
+
 TrafficPattern::TrafficPattern(int nodes)
 : _nodes(nodes)
 {
@@ -63,10 +69,6 @@ TrafficPattern * TrafficPattern::New(string const & pattern, int nodes,
     }
   }
   vector<string> params = tokenize_str(param_str);
-
-  int n_comp_units = config->GetInt("n_comp_units");
-  int n_mem_units = config->GetInt("n_mem_units");
-  int n_io_units = config->GetInt("n_io_units");
   
   TrafficPattern * result = NULL;
   if(pattern_name == "bitcomp") {
@@ -97,8 +99,6 @@ TrafficPattern * TrafficPattern::New(string const & pattern, int nodes,
     result = new RandomPermutationTrafficPattern(nodes, perm_seed);
   } else if(pattern_name == "uniform") {
     result = new UniformRandomTrafficPattern(nodes);
-  } else if(pattern_name == "C2C" || pattern_name == "C2M" || pattern_name == "C2I" || pattern_name == "M2I") {
-    result = new CustomTrafficPattern(nodes, n_comp_units, n_mem_units, n_io_units, pattern_name);
   } else if(pattern_name == "background") {
     vector<int> excludes = tokenize_int(params[0]);
     result = new UniformBackgroundTrafficPattern(nodes, excludes);
@@ -197,6 +197,9 @@ TrafficPattern * TrafficPattern::New(string const & pattern, int nodes,
       rates.resize(hotspots.size(), 1);
     }
     result = new HotSpotTrafficPattern(nodes, hotspots, rates);
+  } else if(pattern_name == "custom") {
+	vector<vector<float>> traffic(nodes, vector<float>(nodes, 0));
+	result = new CustomTrafficPattern(nodes, traffic, config);
   } else {
     cout << "Error: Unknown traffic pattern: " << pattern << endl;
     exit(-1);
@@ -395,28 +398,50 @@ int UniformRandomTrafficPattern::dest(int source)
   return RandomInt(_nodes - 1);
 }
 
-CustomTrafficPattern::CustomTrafficPattern(int nodes, int n_comp_units, int n_mem_units, int n_io_units, string traffic)
-  : RandomTrafficPattern(nodes), _n_comp_units(n_comp_units), _n_mem_units(n_mem_units), _n_io_units(n_io_units), _traffic(traffic) 
-{
+//TODO: Start: Custom traffic pattern (added by RapidChiplet developers)
 
+CustomTrafficPattern::CustomTrafficPattern(int nodes, vector<vector<float>> traffic, Configuration const * const config) : RandomTrafficPattern(nodes), _traffic(traffic)
+{
+  if (config->GetStr("mode") == "traffic"){
+	  // Read the traffic file
+	  string file_name = config->GetStr("traffic_file");
+	  std::ifstream file(file_name);
+	  if (!file.is_open()) {
+		std::cerr << "Could not open traffic file which is expected to be at " << file_name << std::endl;
+		return;
+	  }
+	  // Parse the JSON file
+	  json jsonData;
+	  file >> jsonData;
+	  // Store content in vector<vector<float>>
+	  std::vector<std::vector<float>> data;
+	  int src_node = 0;
+	  for (const auto& nested_list: jsonData) {
+		std::vector<float> weights;
+		for (const auto& element : nested_list) {
+			weights.push_back(element.get<float>());
+		}
+		std::partial_sum(weights.begin(), weights.end(), _traffic[src_node].begin());
+		float total_weight = _traffic[src_node].back();
+		std::transform(_traffic[src_node].begin(), _traffic[src_node].end(), _traffic[src_node].begin(), [total_weight](float c) { return c / total_weight; });
+		src_node++;
+	  }
+  }
 }
 
 int CustomTrafficPattern::dest(int source)
 {
-  if (_traffic == "C2C"){
-    return RandomInt(_n_comp_units-1);
-  }
-  else if (_traffic == "C2M"){
-	return _n_comp_units + RandomInt(_n_mem_units-1);
-  }
-  else if (_traffic == "C2I" || _traffic == "M2I"){
-    return _n_comp_units + _n_mem_units + RandomInt(_n_io_units-1);
-  }
-  else {
-    cout << "ERROR in custom traffic" << endl; 
-    assert(false);
-  }
+  vector<float> probabilities = _traffic[source]; 
+  // Generate a random number between 0 and 1
+  float random_value = RandomFloat();
+  // Use binary search to find the index
+  auto it = std::upper_bound(probabilities.begin(), probabilities.end(), random_value);
+  int destination = std::distance(probabilities.begin(), it);
+  return destination;
 }
+
+//TODO: End: Custom traffic pattern (added by RapidChiplet developers)
+
 
 UniformBackgroundTrafficPattern::UniformBackgroundTrafficPattern(int nodes, vector<int> excluded_nodes)
   : RandomTrafficPattern(nodes)

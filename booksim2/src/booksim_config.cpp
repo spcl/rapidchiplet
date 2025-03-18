@@ -54,6 +54,15 @@ BookSimConfig::BookSimConfig( )
   _int_map["c"] = 1; //concentration
   AddStrField( "routing_function", "none" );
 
+  // TODO: Start: Options added by RapidChiplet developers
+  AddStrField( "mode", "" );
+  AddStrField( "routing_table_type", "" );
+  AddStrField( "routing_table_file", "" );
+  AddStrField( "traffic_file", "" );
+  AddStrField( "trace_file", "" );
+  _int_map["ignore_cycles"] = 0;  
+  // TODO: End: Options added by RapidChiplet developers
+
   //simulator tries to correclty adjust latency for node/router placement 
   _int_map["use_noc_latency"] = 1;
 
@@ -165,41 +174,6 @@ BookSimConfig::BookSimConfig( )
 
   _float_map["injection_rate"]       = 0.1;
   AddStrField("injection_rate", ""); // workaraound to allow for vector specification
-
-  // HERE: Start of config added by RapidChiplet
-  // Trace file
-  AddStrField("trace", ""); 
-  // Component count needed for id mappting
-  AddStrField("n_comp", ""); 
-  _int_map["n_comp"] = 0;
-  AddStrField("n_mem", ""); 
-  _int_map["n_mem"] = 0;
-  AddStrField("n_io", ""); 
-  _int_map["n_io"] = 0;
-  AddStrField("n_comp_units", ""); 
-  _int_map["n_comp_units"] = 0;
-  AddStrField("n_mem_units", ""); 
-  _int_map["n_mem_units"] = 0;
-  AddStrField("n_io_units", ""); 
-  _int_map["n_io_units"] = 0;
-  // Whether or not a component can relay traffic - needed in routing
-  AddStrField("r_comp", ""); 
-  _int_map["r_comp"] = 0;
-  AddStrField("r_mem", ""); 
-  _int_map["r_mem"] = 0;
-  AddStrField("r_io", ""); 
-  _int_map["r_io"] = 0;
-  // Parameters for trace mode: authentic vs idealized
-  AddStrField("netrace_cycles", ""); 
-  _int_map["netrace_cycles"] = 0;
-  // Parameters for partial trace region simulation
-  AddStrField("use_partial_simulation", ""); 
-  _int_map["use_partial_simulation"] = 0;
-  AddStrField("partial_simulation_cycles", ""); 
-  _int_map["partial_simulation_cycles"] = 1000000;
-  AddStrField("partial_simulation_region", ""); 
-  _int_map["partial_simulation_region"] = 0;
-  // HERE: End of config added by RapidChiplet
   
   _int_map["injection_rate_uses_flits"] = 0;
 
@@ -275,7 +249,7 @@ BookSimConfig::BookSimConfig( )
   _int_map["pair_stats"] = 0;
 
   // if avg. latency exceeds the threshold, assume unstable
-  _float_map["latency_thres"] = 10000.0;
+  _float_map["latency_thres"] = 500.0;
   AddStrField("latency_thres", ""); // workaround to allow for vector specification
 
    // consider warmed up once relative change in latency / throughput between successive iterations is smaller than this

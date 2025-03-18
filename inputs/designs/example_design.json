@@ -1,9 +1,13 @@
 {
-	"technology_nodes_file" : "inputs/technology_nodes/example_technologies.json",
-	"chiplets_file" : "inputs/chiplets/example_chiplets.json",
-	"chiplet_placement_file" : "inputs/chiplet_placements/example_placement.json",
-	"ici_topology_file" : "inputs/ici_topologies/example_topology.json",
-	"packaging_file" : "inputs/packaging/example_packaging_active.json",
-	"thermal_config" : "inputs/thermal_config/example_thermal_config.json",
-	"booksim_config" : "inputs/booksim_config/example_booksim_config.json"
+	"design_name" 			: "example_design",
+	"technologies" 			: "inputs/technologies/example_technologies.json",
+	"chiplets" 				: "inputs/chiplets/example_chiplets.json",
+	"placement" 			: "inputs/placements/example_placement.json",
+	"topology" 				: "inputs/topologies/example_topology.json",
+	"packaging" 			: "inputs/packagings/example_packaging.json",
+	"routing_table" 		: "inputs/routing_tables/example_routing_table.json",
+	"traffic_by_unit" 		: "inputs/traffic_by_unit/example_traffic.json",
+	"traffic_by_chiplet" 	: "inputs/traffic_by_chiplet/example_traffic.json",
+	"trace" 				: "inputs/traces/blackscholes_64c_simsmall.json",
+	"booksim_config"		: "inputs/booksim_configs/example_booksim_config.json"
 }
