@@ -1,0 +1,13 @@
+{
+    "design_name": "example_experiment",
+    "technologies": "inputs/technologies/example_technologies.json",
+    "chiplets": "inputs/chiplets/chiplets_example_experiment.json",
+    "placement": "inputs/placements/placement_example_experiment.json",
+    "topology": "inputs/topologies/topology_example_experiment.json",
+    "packaging": "inputs/packagings/example_packaging.json",
+    "routing_table": "inputs/routing_tables/routing_table_example_experiment.json",
+    "traffic_by_unit": "inputs/traffic_by_unit/traffic_example_experiment.json",
+    "traffic_by_chiplet": "inputs/traffic_by_chiplet/traffic_example_experiment.json",
+    "trace": "none",
+    "booksim_config": "inputs/booksim_configs/booksim_config_example_experiment.json"
+}

@@ -1,0 +1,133 @@
+{
+    "chiplets": [
+        {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0,
+            "name": "example_experiment"
+        },
+        {
+            "position": {
+                "x": 8.94772697916911,
+                "y": 0.0
+            },
+            "rotation": 0,
+            "name": "example_experiment"
+        },
+        {
+            "position": {
+                "x": 17.89545395833822,
+                "y": 0.0
+            },
+            "rotation": 0,
+            "name": "example_experiment"
+        },
+        {
+            "position": {
+                "x": 26.843180937507327,
+                "y": 0.0
+            },
+            "rotation": 0,
+            "name": "example_experiment"
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 8.94772697916911
+            },
+            "rotation": 0,
+            "name": "example_experiment"
+        },
+        {
+            "position": {
+                "x": 8.94772697916911,
+                "y": 8.94772697916911
+            },
+            "rotation": 0,
+            "name": "example_experiment"
+        },
+        {
+            "position": {
+                "x": 17.89545395833822,
+                "y": 8.94772697916911
+            },
+            "rotation": 0,
+            "name": "example_experiment"
+        },
+        {
+            "position": {
+                "x": 26.843180937507327,
+                "y": 8.94772697916911
+            },
+            "rotation": 0,
+            "name": "example_experiment"
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 17.89545395833822
+            },
+            "rotation": 0,
+            "name": "example_experiment"
+        },
+        {
+            "position": {
+                "x": 8.94772697916911,
+                "y": 17.89545395833822
+            },
+            "rotation": 0,
+            "name": "example_experiment"
+        },
+        {
+            "position": {
+                "x": 17.89545395833822,
+                "y": 17.89545395833822
+            },
+            "rotation": 0,
+            "name": "example_experiment"
+        },
+        {
+            "position": {
+                "x": 26.843180937507327,
+                "y": 17.89545395833822
+            },
+            "rotation": 0,
+            "name": "example_experiment"
+        },
+        {
+            "position": {
+                "x": 0.0,
+                "y": 26.843180937507327
+            },
+            "rotation": 0,
+            "name": "example_experiment"
+        },
+        {
+            "position": {
+                "x": 8.94772697916911,
+                "y": 26.843180937507327
+            },
+            "rotation": 0,
+            "name": "example_experiment"
+        },
+        {
+            "position": {
+                "x": 17.89545395833822,
+                "y": 26.843180937507327
+            },
+            "rotation": 0,
+            "name": "example_experiment"
+        },
+        {
+            "position": {
+                "x": 26.843180937507327,
+                "y": 26.843180937507327
+            },
+            "rotation": 0,
+            "name": "example_experiment"
+        }
+    ],
+    "interposer_routers": []
+}

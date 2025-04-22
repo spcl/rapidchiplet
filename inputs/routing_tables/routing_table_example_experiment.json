@@ -1,0 +1,1733 @@
+{
+    "type": "default",
+    "table": {
+        "__tuple__:[\"chiplet\", 0]": {
+            "__tuple__:[\"chiplet\", 0]": null,
+            "__tuple__:[\"chiplet\", 1]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 2]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 3]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    3
+                ]
+            },
+            "__tuple__:[\"chiplet\", 4]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    4
+                ]
+            },
+            "__tuple__:[\"chiplet\", 5]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 6]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 7]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    3
+                ]
+            },
+            "__tuple__:[\"chiplet\", 8]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    4
+                ]
+            },
+            "__tuple__:[\"chiplet\", 9]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 10]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 11]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    3
+                ]
+            },
+            "__tuple__:[\"chiplet\", 12]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    12
+                ]
+            },
+            "__tuple__:[\"chiplet\", 13]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 14]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 15]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    3
+                ]
+            }
+        },
+        "__tuple__:[\"chiplet\", 1]": {
+            "__tuple__:[\"chiplet\", 0]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 1]": null,
+            "__tuple__:[\"chiplet\", 2]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    2
+                ]
+            },
+            "__tuple__:[\"chiplet\", 3]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 4]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 5]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    5
+                ]
+            },
+            "__tuple__:[\"chiplet\", 6]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    2
+                ]
+            },
+            "__tuple__:[\"chiplet\", 7]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 8]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 9]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    5
+                ]
+            },
+            "__tuple__:[\"chiplet\", 10]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    2
+                ]
+            },
+            "__tuple__:[\"chiplet\", 11]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 12]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 13]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    13
+                ]
+            },
+            "__tuple__:[\"chiplet\", 14]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    2
+                ]
+            },
+            "__tuple__:[\"chiplet\", 15]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            }
+        },
+        "__tuple__:[\"chiplet\", 2]": {
+            "__tuple__:[\"chiplet\", 0]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 1]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 2]": null,
+            "__tuple__:[\"chiplet\", 3]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    3
+                ]
+            },
+            "__tuple__:[\"chiplet\", 4]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 5]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 6]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    6
+                ]
+            },
+            "__tuple__:[\"chiplet\", 7]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    3
+                ]
+            },
+            "__tuple__:[\"chiplet\", 8]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 9]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 10]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    6
+                ]
+            },
+            "__tuple__:[\"chiplet\", 11]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    3
+                ]
+            },
+            "__tuple__:[\"chiplet\", 12]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 13]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 14]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    14
+                ]
+            },
+            "__tuple__:[\"chiplet\", 15]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    3
+                ]
+            }
+        },
+        "__tuple__:[\"chiplet\", 3]": {
+            "__tuple__:[\"chiplet\", 0]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 1]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 2]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    2
+                ]
+            },
+            "__tuple__:[\"chiplet\", 3]": null,
+            "__tuple__:[\"chiplet\", 4]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 5]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 6]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    2
+                ]
+            },
+            "__tuple__:[\"chiplet\", 7]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    7
+                ]
+            },
+            "__tuple__:[\"chiplet\", 8]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 9]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 10]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    2
+                ]
+            },
+            "__tuple__:[\"chiplet\", 11]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    7
+                ]
+            },
+            "__tuple__:[\"chiplet\", 12]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 13]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 14]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    2
+                ]
+            },
+            "__tuple__:[\"chiplet\", 15]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    15
+                ]
+            }
+        },
+        "__tuple__:[\"chiplet\", 4]": {
+            "__tuple__:[\"chiplet\", 0]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 1]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 2]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 3]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 4]": null,
+            "__tuple__:[\"chiplet\", 5]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    5
+                ]
+            },
+            "__tuple__:[\"chiplet\", 6]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    5
+                ]
+            },
+            "__tuple__:[\"chiplet\", 7]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    7
+                ]
+            },
+            "__tuple__:[\"chiplet\", 8]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    8
+                ]
+            },
+            "__tuple__:[\"chiplet\", 9]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    5
+                ]
+            },
+            "__tuple__:[\"chiplet\", 10]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    5
+                ]
+            },
+            "__tuple__:[\"chiplet\", 11]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    7
+                ]
+            },
+            "__tuple__:[\"chiplet\", 12]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 13]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 14]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 15]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            }
+        },
+        "__tuple__:[\"chiplet\", 5]": {
+            "__tuple__:[\"chiplet\", 0]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 1]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 2]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 3]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 4]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    4
+                ]
+            },
+            "__tuple__:[\"chiplet\", 5]": null,
+            "__tuple__:[\"chiplet\", 6]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    6
+                ]
+            },
+            "__tuple__:[\"chiplet\", 7]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    4
+                ]
+            },
+            "__tuple__:[\"chiplet\", 8]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    4
+                ]
+            },
+            "__tuple__:[\"chiplet\", 9]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    9
+                ]
+            },
+            "__tuple__:[\"chiplet\", 10]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    6
+                ]
+            },
+            "__tuple__:[\"chiplet\", 11]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    4
+                ]
+            },
+            "__tuple__:[\"chiplet\", 12]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 13]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 14]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 15]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            }
+        },
+        "__tuple__:[\"chiplet\", 6]": {
+            "__tuple__:[\"chiplet\", 0]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    2
+                ]
+            },
+            "__tuple__:[\"chiplet\", 1]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    2
+                ]
+            },
+            "__tuple__:[\"chiplet\", 2]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    2
+                ]
+            },
+            "__tuple__:[\"chiplet\", 3]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    2
+                ]
+            },
+            "__tuple__:[\"chiplet\", 4]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    5
+                ]
+            },
+            "__tuple__:[\"chiplet\", 5]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    5
+                ]
+            },
+            "__tuple__:[\"chiplet\", 6]": null,
+            "__tuple__:[\"chiplet\", 7]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    7
+                ]
+            },
+            "__tuple__:[\"chiplet\", 8]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    5
+                ]
+            },
+            "__tuple__:[\"chiplet\", 9]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    5
+                ]
+            },
+            "__tuple__:[\"chiplet\", 10]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    10
+                ]
+            },
+            "__tuple__:[\"chiplet\", 11]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    7
+                ]
+            },
+            "__tuple__:[\"chiplet\", 12]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    2
+                ]
+            },
+            "__tuple__:[\"chiplet\", 13]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    2
+                ]
+            },
+            "__tuple__:[\"chiplet\", 14]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    2
+                ]
+            },
+            "__tuple__:[\"chiplet\", 15]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    2
+                ]
+            }
+        },
+        "__tuple__:[\"chiplet\", 7]": {
+            "__tuple__:[\"chiplet\", 0]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    3
+                ]
+            },
+            "__tuple__:[\"chiplet\", 1]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    3
+                ]
+            },
+            "__tuple__:[\"chiplet\", 2]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    3
+                ]
+            },
+            "__tuple__:[\"chiplet\", 3]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    3
+                ]
+            },
+            "__tuple__:[\"chiplet\", 4]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    4
+                ]
+            },
+            "__tuple__:[\"chiplet\", 5]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    4
+                ]
+            },
+            "__tuple__:[\"chiplet\", 6]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    6
+                ]
+            },
+            "__tuple__:[\"chiplet\", 7]": null,
+            "__tuple__:[\"chiplet\", 8]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    4
+                ]
+            },
+            "__tuple__:[\"chiplet\", 9]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    4
+                ]
+            },
+            "__tuple__:[\"chiplet\", 10]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    6
+                ]
+            },
+            "__tuple__:[\"chiplet\", 11]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    11
+                ]
+            },
+            "__tuple__:[\"chiplet\", 12]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    3
+                ]
+            },
+            "__tuple__:[\"chiplet\", 13]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    3
+                ]
+            },
+            "__tuple__:[\"chiplet\", 14]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    3
+                ]
+            },
+            "__tuple__:[\"chiplet\", 15]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    3
+                ]
+            }
+        },
+        "__tuple__:[\"chiplet\", 8]": {
+            "__tuple__:[\"chiplet\", 0]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    4
+                ]
+            },
+            "__tuple__:[\"chiplet\", 1]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    4
+                ]
+            },
+            "__tuple__:[\"chiplet\", 2]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    4
+                ]
+            },
+            "__tuple__:[\"chiplet\", 3]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    4
+                ]
+            },
+            "__tuple__:[\"chiplet\", 4]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    4
+                ]
+            },
+            "__tuple__:[\"chiplet\", 5]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    4
+                ]
+            },
+            "__tuple__:[\"chiplet\", 6]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    4
+                ]
+            },
+            "__tuple__:[\"chiplet\", 7]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    4
+                ]
+            },
+            "__tuple__:[\"chiplet\", 8]": null,
+            "__tuple__:[\"chiplet\", 9]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    9
+                ]
+            },
+            "__tuple__:[\"chiplet\", 10]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    9
+                ]
+            },
+            "__tuple__:[\"chiplet\", 11]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    11
+                ]
+            },
+            "__tuple__:[\"chiplet\", 12]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    12
+                ]
+            },
+            "__tuple__:[\"chiplet\", 13]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    9
+                ]
+            },
+            "__tuple__:[\"chiplet\", 14]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    9
+                ]
+            },
+            "__tuple__:[\"chiplet\", 15]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    11
+                ]
+            }
+        },
+        "__tuple__:[\"chiplet\", 9]": {
+            "__tuple__:[\"chiplet\", 0]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    5
+                ]
+            },
+            "__tuple__:[\"chiplet\", 1]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    5
+                ]
+            },
+            "__tuple__:[\"chiplet\", 2]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    5
+                ]
+            },
+            "__tuple__:[\"chiplet\", 3]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    5
+                ]
+            },
+            "__tuple__:[\"chiplet\", 4]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    5
+                ]
+            },
+            "__tuple__:[\"chiplet\", 5]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    5
+                ]
+            },
+            "__tuple__:[\"chiplet\", 6]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    5
+                ]
+            },
+            "__tuple__:[\"chiplet\", 7]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    5
+                ]
+            },
+            "__tuple__:[\"chiplet\", 8]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    8
+                ]
+            },
+            "__tuple__:[\"chiplet\", 9]": null,
+            "__tuple__:[\"chiplet\", 10]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    10
+                ]
+            },
+            "__tuple__:[\"chiplet\", 11]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    8
+                ]
+            },
+            "__tuple__:[\"chiplet\", 12]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    8
+                ]
+            },
+            "__tuple__:[\"chiplet\", 13]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    13
+                ]
+            },
+            "__tuple__:[\"chiplet\", 14]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    10
+                ]
+            },
+            "__tuple__:[\"chiplet\", 15]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    8
+                ]
+            }
+        },
+        "__tuple__:[\"chiplet\", 10]": {
+            "__tuple__:[\"chiplet\", 0]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    6
+                ]
+            },
+            "__tuple__:[\"chiplet\", 1]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    6
+                ]
+            },
+            "__tuple__:[\"chiplet\", 2]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    6
+                ]
+            },
+            "__tuple__:[\"chiplet\", 3]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    6
+                ]
+            },
+            "__tuple__:[\"chiplet\", 4]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    6
+                ]
+            },
+            "__tuple__:[\"chiplet\", 5]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    6
+                ]
+            },
+            "__tuple__:[\"chiplet\", 6]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    6
+                ]
+            },
+            "__tuple__:[\"chiplet\", 7]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    6
+                ]
+            },
+            "__tuple__:[\"chiplet\", 8]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    9
+                ]
+            },
+            "__tuple__:[\"chiplet\", 9]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    9
+                ]
+            },
+            "__tuple__:[\"chiplet\", 10]": null,
+            "__tuple__:[\"chiplet\", 11]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    11
+                ]
+            },
+            "__tuple__:[\"chiplet\", 12]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    9
+                ]
+            },
+            "__tuple__:[\"chiplet\", 13]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    9
+                ]
+            },
+            "__tuple__:[\"chiplet\", 14]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    14
+                ]
+            },
+            "__tuple__:[\"chiplet\", 15]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    11
+                ]
+            }
+        },
+        "__tuple__:[\"chiplet\", 11]": {
+            "__tuple__:[\"chiplet\", 0]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    7
+                ]
+            },
+            "__tuple__:[\"chiplet\", 1]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    7
+                ]
+            },
+            "__tuple__:[\"chiplet\", 2]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    7
+                ]
+            },
+            "__tuple__:[\"chiplet\", 3]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    7
+                ]
+            },
+            "__tuple__:[\"chiplet\", 4]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    7
+                ]
+            },
+            "__tuple__:[\"chiplet\", 5]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    7
+                ]
+            },
+            "__tuple__:[\"chiplet\", 6]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    7
+                ]
+            },
+            "__tuple__:[\"chiplet\", 7]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    7
+                ]
+            },
+            "__tuple__:[\"chiplet\", 8]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    8
+                ]
+            },
+            "__tuple__:[\"chiplet\", 9]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    8
+                ]
+            },
+            "__tuple__:[\"chiplet\", 10]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    10
+                ]
+            },
+            "__tuple__:[\"chiplet\", 11]": null,
+            "__tuple__:[\"chiplet\", 12]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    8
+                ]
+            },
+            "__tuple__:[\"chiplet\", 13]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    8
+                ]
+            },
+            "__tuple__:[\"chiplet\", 14]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    10
+                ]
+            },
+            "__tuple__:[\"chiplet\", 15]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    15
+                ]
+            }
+        },
+        "__tuple__:[\"chiplet\", 12]": {
+            "__tuple__:[\"chiplet\", 0]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 1]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 2]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 3]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 4]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 5]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 6]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 7]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    0
+                ]
+            },
+            "__tuple__:[\"chiplet\", 8]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    8
+                ]
+            },
+            "__tuple__:[\"chiplet\", 9]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    8
+                ]
+            },
+            "__tuple__:[\"chiplet\", 10]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    8
+                ]
+            },
+            "__tuple__:[\"chiplet\", 11]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    8
+                ]
+            },
+            "__tuple__:[\"chiplet\", 12]": null,
+            "__tuple__:[\"chiplet\", 13]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    13
+                ]
+            },
+            "__tuple__:[\"chiplet\", 14]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    13
+                ]
+            },
+            "__tuple__:[\"chiplet\", 15]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    15
+                ]
+            }
+        },
+        "__tuple__:[\"chiplet\", 13]": {
+            "__tuple__:[\"chiplet\", 0]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 1]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 2]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 3]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 4]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 5]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 6]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 7]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    1
+                ]
+            },
+            "__tuple__:[\"chiplet\", 8]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    9
+                ]
+            },
+            "__tuple__:[\"chiplet\", 9]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    9
+                ]
+            },
+            "__tuple__:[\"chiplet\", 10]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    9
+                ]
+            },
+            "__tuple__:[\"chiplet\", 11]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    9
+                ]
+            },
+            "__tuple__:[\"chiplet\", 12]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    12
+                ]
+            },
+            "__tuple__:[\"chiplet\", 13]": null,
+            "__tuple__:[\"chiplet\", 14]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    14
+                ]
+            },
+            "__tuple__:[\"chiplet\", 15]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    12
+                ]
+            }
+        },
+        "__tuple__:[\"chiplet\", 14]": {
+            "__tuple__:[\"chiplet\", 0]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    2
+                ]
+            },
+            "__tuple__:[\"chiplet\", 1]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    2
+                ]
+            },
+            "__tuple__:[\"chiplet\", 2]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    2
+                ]
+            },
+            "__tuple__:[\"chiplet\", 3]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    2
+                ]
+            },
+            "__tuple__:[\"chiplet\", 4]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    2
+                ]
+            },
+            "__tuple__:[\"chiplet\", 5]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    2
+                ]
+            },
+            "__tuple__:[\"chiplet\", 6]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    2
+                ]
+            },
+            "__tuple__:[\"chiplet\", 7]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    2
+                ]
+            },
+            "__tuple__:[\"chiplet\", 8]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    10
+                ]
+            },
+            "__tuple__:[\"chiplet\", 9]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    10
+                ]
+            },
+            "__tuple__:[\"chiplet\", 10]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    10
+                ]
+            },
+            "__tuple__:[\"chiplet\", 11]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    10
+                ]
+            },
+            "__tuple__:[\"chiplet\", 12]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    13
+                ]
+            },
+            "__tuple__:[\"chiplet\", 13]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    13
+                ]
+            },
+            "__tuple__:[\"chiplet\", 14]": null,
+            "__tuple__:[\"chiplet\", 15]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    15
+                ]
+            }
+        },
+        "__tuple__:[\"chiplet\", 15]": {
+            "__tuple__:[\"chiplet\", 0]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    3
+                ]
+            },
+            "__tuple__:[\"chiplet\", 1]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    3
+                ]
+            },
+            "__tuple__:[\"chiplet\", 2]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    3
+                ]
+            },
+            "__tuple__:[\"chiplet\", 3]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    3
+                ]
+            },
+            "__tuple__:[\"chiplet\", 4]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    3
+                ]
+            },
+            "__tuple__:[\"chiplet\", 5]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    3
+                ]
+            },
+            "__tuple__:[\"chiplet\", 6]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    3
+                ]
+            },
+            "__tuple__:[\"chiplet\", 7]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    3
+                ]
+            },
+            "__tuple__:[\"chiplet\", 8]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    11
+                ]
+            },
+            "__tuple__:[\"chiplet\", 9]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    11
+                ]
+            },
+            "__tuple__:[\"chiplet\", 10]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    11
+                ]
+            },
+            "__tuple__:[\"chiplet\", 11]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    11
+                ]
+            },
+            "__tuple__:[\"chiplet\", 12]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    12
+                ]
+            },
+            "__tuple__:[\"chiplet\", 13]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    12
+                ]
+            },
+            "__tuple__:[\"chiplet\", 14]": {
+                "__tuple__": true,
+                "items": [
+                    "chiplet",
+                    14
+                ]
+            },
+            "__tuple__:[\"chiplet\", 15]": null
+        }
+    }
+}

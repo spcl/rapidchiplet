@@ -1,0 +1,20 @@
+{
+    "mode": "traffic",
+    "ignore_cycles": 0,
+    "precision": 0.001,
+    "saturation_factor": 5,
+    "num_vcs": 4,
+    "vc_buf_size": 16,
+    "warmup_periods": 1,
+    "sim_count": 1,
+    "hold_switch_for_packet": 0,
+    "packet_size": 1,
+    "vc_allocator": "separable_input_first",
+    "sw_allocator": "separable_input_first",
+    "alloc_iters": 1,
+    "sample_period": 5300,
+    "wait_for_tail_credit": 0,
+    "priority": "none",
+    "injection_rate_uses_flits": 1,
+    "deadlock_warn_timeout": 1024
+}

@@ -8,7 +8,7 @@
 
 Clone the RapidChiplet repository:
 ```bash
-git clone https://github.com/anonymous-for-blind-review-1/rc.git
+git clone https://github.com/spcl/rapidchiplet.git
 ```
 
 Install all requirements using pip:

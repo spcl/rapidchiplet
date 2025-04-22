@@ -1,0 +1,15 @@
+{
+	"link_routing" : "manhattan",
+	"link_latency_type" : "function",
+	"link_latency" : "lambda x : 0.25 * x",
+	"link_power_type" : "constant",
+	"link_power" : 1,
+	"packaging_yield" : 0.9,
+	"bump_pitch" : 0.05,
+	"non_data_wires" : 12,
+	"is_active" : true,
+	"latency_irouter" : 5,
+	"power_irouter" : 0.25,
+	"has_interposer" : true,
+	"interposer_technology" : "tech_3"
+}

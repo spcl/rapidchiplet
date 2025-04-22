@@ -1,0 +1,37 @@
+{
+    "example_experiment": {
+        "dimensions": {
+            "x": 8.79772697916911,
+            "y": 8.79772697916911
+        },
+        "type": "compute",
+        "phys": [
+            {
+                "x": 0.6441986432926979,
+                "y": 4.398863489584555,
+                "fraction_bump_area": 0.25
+            },
+            {
+                "x": 4.398863489584555,
+                "y": 8.15352833587641,
+                "fraction_bump_area": 0.25
+            },
+            {
+                "x": 8.15352833587641,
+                "y": 4.398863489584555,
+                "fraction_bump_area": 0.25
+            },
+            {
+                "x": 4.398863489584555,
+                "y": 0.6441986432926979,
+                "fraction_bump_area": 0.25
+            }
+        ],
+        "fraction_power_bumps": 0.5,
+        "technology": "tech_1",
+        "power": 20.5,
+        "relay": true,
+        "internal_latency": 3,
+        "unit_count": 8
+    }
+}
