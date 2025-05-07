@@ -77,8 +77,8 @@ def create_evaluation_plot():
 			xvals = [x["scale"] for x in filtered_data]
 			lat_err = [(x["latency"] / x["bs_latency"] -1.0) * 100 for x in filtered_data]
 			tp_err = [(x["throughput"] / x["bs_throughput"] -1.0) * 100 for x in filtered_data]
-			lat_spu = [x["bs_runtime_lat"] / x["runtime_lat"] for x in filtered_data]
-			tp_spu = [x["bs_runtime_tp"] / x["runtime_tp"] for x in filtered_data]
+			lat_spu = [(x["bs_runtime_lat"] / x["runtime_lat"] if x["runtime_lat"] > 0 else float("nan")) for x in filtered_data]
+			tp_spu = [(x["bs_runtime_tp"] / x["runtime_tp"] if x["runtime_tp"] > 0 else float("nan")) for x in filtered_data]
 			metrics = [lat_err, lat_spu, tp_err, tp_spu]
 			for (k, metric) in enumerate(metrics):
 				ax[k][i].plot(xvals, metric, label=topology, marker=markers[j], color=colors[j])
@@ -312,7 +312,7 @@ if __name__ == "__main__":
 	# Evaluation Plot (Fig 4 in the paper)
 	create_evaluation_plot()
 	# Extended Evaluation Plot showing the absolute latency and throughput values and the runtimes (not in the paper)
-	create_extended_evaluation()
+	create_extended_evaluation_plot()
 	# Case Study Plot (Fig 5 in the paper)
 	create_case_study_plot()
 
